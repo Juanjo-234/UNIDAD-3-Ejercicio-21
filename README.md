@@ -1,7 +1,11 @@
-Resolución del ejercicio N°21 de la unidad 3 de programación 2.
-Este programa modela un sistema de gestión de personal que calcula y consolida los salarios de diferentes tipos de empleados mediante el uso de herencia, atributos protegidos y polimorfismo en Java.
+Este programa está diseñado para modelar un sistema de gestión de personal y liquidación de haberes mediante la aplicación de herencia, encapsulamiento y polimorfismo en programación orientada a objetos (por ejemplo, en Java).
 
-Clases utilizadas
-Empleado: Clase abstracta base que almacena los datos generales del personal (nombre, dni, legajo) y define la estructura común.
-EmpleadoAsalariado: Clase hija que hereda de Empleado y calcula el salario en función de un monto mensual fijo.
-EmpleadoPorHora: Clase hija que hereda de Empleado y calcula el salario multiplicando las horas trabajadas por la tarifa correspondiente.
+A continuación se detalla exactamente lo que hace cada parte del programa:
+
+Define la clase base Empleado: Agrupa los atributos comunes a todo el personal (nombre, dni y legajo) bajo un diseño encapsulado y provee un constructor y métodos de acceso seguros.
+
+Implementa las subclases EmpleadoAsalariado y EmpleadoPorHora: Extienden de Empleado incorporando sus atributos particulares (sueldo mensual fijo para el asalariado; tarifa por hora y horas trabajadas para el temporario).
+
+Aplica polimorfismo mediante la sobrescritura (@Override) del método calcularSalario(): Cada subclase implementa su propia regla de negocio para liquidar el estipendio económico de forma especializada.
+
+Ejecuta la prueba en el main: Instancia objetos de ambas clases hijas polimórficamente, invoca el cálculo salarial y muestra la información consolidada por consola.
